@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ads Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="ads-marketing">
+    <main class="section page-top">
+      <div class="container">
+        <h1 class="page-title">Ads Marketing</h1>
+        <p class="page-note">Text and Images</p>
+        <p class="lead-inline">Growth Marketing</p>
+        <p>
+          Generating leads, building marketing strategies, and turning campaigns
+          into measurable business growth.
+        </p>
+
+        <div class="top-links">
+          <a href="index.html" class="btn">Back to Main Page</a>
+        </div>
+
+        <div class="upload-block">
+          <form id="ads-form" class="ads-form">
+            <h3>Add New Marketing Item</h3>
+            <input
+              id="ad-title"
+              type="text"
+              placeholder="Title"
+              required
+            />
+            <textarea
+              id="ad-text"
+              rows="4"
+              placeholder="Description"
+              required
+            ></textarea>
+            <input id="ad-image" class="file-input" type="file" accept="image/*" />
+            <button type="submit" class="btn">Add Item</button>
+          </form>
+
+          <div id="ads-list" class="ads-grid" aria-live="polite"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="media-pages.js"></script>
+  </body>
+</html>
