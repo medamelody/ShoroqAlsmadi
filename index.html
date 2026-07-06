@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <!-- Abstract gradient blobs -->
+      <div class="hero-blobs" aria-hidden="true">
+        <div class="blob blob-red"></div>
+        <div class="blob blob-purple"></div>
+        <div class="blob blob-teal-1"></div>
+        <div class="blob blob-teal-2"></div>
+      </div>
+
+      <!-- Two-column grid: photo | text -->
+      <div class="hero-inner">
+        <div class="hero-photo-wrap">
+          <img
+            class="hero-photo"
+            src="https://ibb.co/ccMRkKjn"
+            alt="Shorouq Smadi"
+          />
+        </div>
+
+        <div class="hero-text-wrap">
+          <h1 class="hero-name">Shorouq Smadi</h1>
+          <p class="hero-tagline">
+            <strong>Creative Marketing &amp; Brand Experience Professional</strong>
+            specializing in marketing strategy, social media &amp; media Buying
+            <span class="accent-teal">creative direction</span>, &amp; content
+            development.
+          </p>
+
+          <div class="hero-cta-wrap">
+            <div class="profile-panel">
+              <a href="#branding" class="btn-profile">Profile</a>
+            </div>
+            <a href="#branding" class="scroll-chevron" aria-label="Scroll down">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="branding">
+        <div class="container">
+          <a class="section-card-link" href="branding.html" target="_blank" rel="noopener">
+            <p class="section-tag">Albums - Images</p>
+            <h2>Branding</h2>
+            <p>
+              Building memorable brands through clear positioning, visual
+              identity, and meaningful customer experiences.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="social-media">
+        <div class="container">
+          <a
+            class="section-card-link"
+            href="social-media.html"
+            target="_blank"
+            rel="noopener"
+          >
+            <p class="section-tag">Albums - Videos</p>
+            <h2>Social Media</h2>
+            <p>
+              Creating engaging content and social media strategies that grow
+              communities and strengthen brand presence.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="ads-marketing">
+        <div class="container">
+          <a
+            class="section-card-link"
+            href="ads-marketing.html"
+            target="_blank"
+            rel="noopener"
+          >
+            <p class="section-tag">Text and Images</p>
+            <h2>Ads Marketing</h2>
+            <p class="lead-inline">Growth Marketing</p>
+            <p>
+              Generating leads, building marketing strategies, and turning
+              campaigns into measurable business growth.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="clients">
+        <div class="container">
+          <h2>My Clients</h2>
+          <div class="slider" aria-label="Client logos">
+            <div class="slider-track" id="slider-track">
+              <div class="client-card">Client One</div>
+              <div class="client-card">Client Two</div>
+              <div class="client-card">Client Three</div>
+              <div class="client-card">Client Four</div>
+              <div class="client-card">Client Five</div>
+              <div class="client-card">Client Six</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <p>Ready to collaborate? Send a quick message.</p>
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@email.com" required />
+            </label>
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project"
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
