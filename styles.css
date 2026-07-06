@@ -153,7 +153,7 @@ body {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 42% 58%;
+  grid-template-columns: 48% 52%;
   width: 100%;
   min-height: 100vh;
 }
@@ -166,9 +166,9 @@ body {
 }
 
 .hero-photo {
-  height: 90vh;
+  height: 100vh;
   width: auto;
-  max-width: 100%;
+  max-width: 112%;
   object-fit: contain;
   object-position: bottom center;
   display: block;
@@ -654,12 +654,12 @@ body[data-page] .page-note {
 
   .hero-photo-wrap {
     justify-content: center;
-    max-height: 45vh;
+    max-height: 52vh;
     overflow: hidden;
   }
 
   .hero-photo {
-    height: 45vh;
+    height: 52vh;
     object-position: top center;
   }
 
